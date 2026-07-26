@@ -129,6 +129,11 @@ Este proyecto busca aplicar conceptos de Matemáticas Discretas como:
 - Puntos de articulación.
 - Densidad de grafos.
 
+---
+
+## Estado del proyecto
+
+Proyecto finalizado para la entrega académica.
 
 ---
 
