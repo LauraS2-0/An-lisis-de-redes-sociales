@@ -1,0 +1,6 @@
+{
+  "name": "Analizador de redes sociales",
+  "description": "Un analizador interactivo de redes sociales basado en teoría de grafos y matemáticas discretas. Permite modelar, visualizar y analizar propiedades de conectividad en tiempo real.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

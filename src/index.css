@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Hanken Grotesk", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Theme colors from the HTML specifications */
+  --color-surface: #fcf9f8;
+  --color-surface-dim: #dcd9d9;
+  --color-surface-bright: #fcf9f8;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f6f3f2;
+  --color-surface-container: #f0eded;
+  --color-surface-container-high: #eae7e7;
+  --color-surface-container-highest: #e4e2e1;
+  --color-on-surface: #1b1c1c;
+  --color-on-surface-variant: #414846;
+  --color-inverse-surface: #303030;
+  --color-inverse-on-surface: #f3f0f0;
+  --color-outline: #727976;
+  --color-outline-variant: #c1c8c5;
+  --color-surface-tint: #47645e;
+  --color-primary: #324f49;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #4a6761;
+  --color-on-primary-container: #c4e4dc;
+  --color-inverse-primary: #aecdc6;
+  --color-secondary: #4f5e80;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #c8d7ff;
+  --color-on-secondary-container: #4e5d7f;
+  --color-tertiary: #634041;
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-container: #7e5758;
+  --color-on-tertiary-container: #ffd2d3;
+  --color-error: #ba1a1a;
+  --color-on-error: #ffffff;
+  --color-error-container: #ffdad6;
+  --color-on-error-container: #93000a;
+  --color-primary-fixed: #c9e9e1;
+  --color-primary-fixed-dim: #aecdc6;
+  --color-on-primary-fixed: #02201c;
+  --color-on-primary-fixed-variant: #2f4c47;
+  --color-secondary-fixed: #d8e2ff;
+  --color-secondary-fixed-dim: #b7c6ee;
+  --color-on-secondary-fixed: #091b39;
+  --color-on-secondary-fixed-variant: #374667;
+  --color-tertiary-fixed: #ffdada;
+  --color-tertiary-fixed-dim: #ecbabb;
+  --color-on-tertiary-fixed: #2f1315;
+  --color-on-tertiary-fixed-variant: #603d3f;
+  --color-background: #fcf9f8;
+  --color-on-background: #1b1c1c;
+  --color-surface-variant: #e4e2e1;
+
+  --radius-xs: 0.125rem;
+  --radius-default: 0.25rem;
+  --radius-md: 0.375rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-full: 9999px;
+  
+  --spacing-unit: 4px;
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 48px;
+  --spacing-panel-width: 320px;
+  --spacing-sidebar-width: 64px;
+}
+
+body {
+  font-family: var(--font-sans);
+  overflow: hidden;
+  background-color: var(--color-background);
+  color: var(--color-on-background);
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+.graph-node {
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.graph-node:hover {
+  filter: brightness(1.1);
+}
+
+.graph-node.active {
+  outline: 4px solid rgba(174, 205, 198, 0.4);
+}
+
+.zebra-table tr:nth-child(even) {
+  background-color: rgba(27, 28, 28, 0.02);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c8c5;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a2aba7;
+}
