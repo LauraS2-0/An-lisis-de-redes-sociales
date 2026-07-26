@@ -47,12 +47,12 @@ export default function GlobalMetrics({
       return;
     }
 
-    // Calcular métricas adicionales para cada nodo de forma precisa
+    
     const nodeDetails = nodes.map((node) => {
       const neighbors = adj.get(node.id) || [];
       const neighborNames = neighbors.map(id => nodes.find(n => n.id === id)?.name || id);
       
-      // Calcular excentricidad del nodo usando BFS
+      
       const distances: Record<string, number> = { [node.id]: 0 };
       const queue = [node.id];
       let maxDist = 0;
