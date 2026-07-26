@@ -171,10 +171,3 @@ Actualmente permite construir y analizar redes sociales mediante grafos no dirig
 
 ---
 
-## Integrantes
-
-**Laura Sophia Castro**
-
-Ingeniería de Sistemas y Computación
-
-Universidad Nacional de Colombia
