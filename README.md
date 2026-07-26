@@ -5,6 +5,20 @@ Aplicación web interactiva desarrollada como proyecto académico para la asigna
 El proyecto permite construir y analizar redes sociales mediante grafos no dirigidos, aplicando algoritmos clásicos de teoría de grafos para obtener métricas y visualizar la estructura de la red de manera interactiva.
 
 ---
+## Integrantes
+
+**Laura Sophia Castro**
+
+Ingeniería de Sistemas y Computación
+
+Universidad Nacional de Colombia
+
+---
+## Objetivo
+
+Desarrollar una aplicación web interactiva que permita modelar y analizar redes sociales mediante grafos no dirigidos, aplicando algoritmos fundamentales de la teoría de grafos para calcular métricas estructurales y visualizar las relaciones entre los distintos nodos de la red.
+
+---
 
 ## Características
 
@@ -33,7 +47,13 @@ El proyecto permite construir y analizar redes sociales mediante grafos no dirig
 - Lucide React
 
 ---
+## Requisitos
 
+- Node.js 18 o superior.
+- npm 9 o superior.
+- Navegador web moderno compatible con JavaScript.
+
+---
 ## Algoritmos implementados
 
 El proyecto implementa diversos algoritmos de teoría de grafos:
@@ -145,11 +165,13 @@ Para comprobar el correcto funcionamiento:
 
 ## Estado del proyecto
 
-Proyecto finalizado para la entrega académica.
+Proyecto finalizado y funcional.
+
+Actualmente permite construir y analizar redes sociales mediante grafos no dirigidos, incluyendo el cálculo de métricas estructurales, componentes conexas, nodos puente, distancias mínimas y generación automática de informes.
 
 ---
 
-## Autor
+## Integrantes
 
 **Laura Sophia Castro**
 
