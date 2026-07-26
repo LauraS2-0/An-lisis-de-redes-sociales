@@ -25,15 +25,16 @@ export default function GlobalMetrics({
   const adj = getAdjacencyList(nodes, edges);
   const components = getConnectedComponents(nodes, adj);
 
-  // Find bridge nodes (cut vertices)
+
   const bridgeNodes = nodes.filter((n) =>
     checkIsBridgeNode(n.id, nodes, edges, components.length)
   );
 
-  // Find bridge edges (puentes)
+
+
   const bridgeEdges = getBridgeEdges(nodes, edges);
 
-  // Calculate degree distribution for a neat dashboard chart
+
   const sortedNodesByDegree = [...nodes]
     .map((node) => ({
       ...node,
@@ -69,8 +70,7 @@ export default function GlobalMetrics({
           }
         }
       }
-
-      // Si no alcanza a todos los nodos, indicarlo de forma limpia
+      
       const isConnectedToAll = nodes.every(n => distances[n.id] !== undefined);
 
       return {
@@ -86,7 +86,7 @@ export default function GlobalMetrics({
     if (format === "json") {
       const report = {
         metadata: {
-          title: "Informe Consolidado de la Red Social de Comunicación",
+          title: "Informe Consolidado de la Red Social",
           generatedAt: new Date().toLocaleString(),
           summary: {
             totalNodes: nodes.length,
@@ -303,7 +303,7 @@ Fin del Informe Consolidado de la Red.
             <span className="text-xs text-on-surface-variant">saltos</span>
           </div>
           <p className="text-xs text-on-surface-variant font-body-sm">
-            La excentricidad mínima de los nodos en la red. Representa el límite de accesibilidad desde el "centro".
+            La excentricidad mínima de los nodos en la red.
           </p>
         </div>
 
@@ -317,7 +317,7 @@ Fin del Informe Consolidado de la Red.
             <span className="text-xs text-on-surface-variant">puntos vulnerables</span>
           </div>
           <p className="text-xs text-on-surface-variant font-body-sm">
-            Nodos corte y enlaces puente cuya eliminación desconecta o fragmenta la red social.
+            Nodos corte y enlaces puente cuya eliminación desconecta o fragmenta el grafo.
           </p>
         </div>
       </div>
