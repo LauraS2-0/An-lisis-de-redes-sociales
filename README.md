@@ -131,6 +131,18 @@ Este proyecto busca aplicar conceptos de Matemáticas Discretas como:
 
 ---
 
+## Verificación del funcionamiento
+
+Para comprobar el correcto funcionamiento:
+
+1. Ejecutar la aplicación.
+2. Agregar una persona.
+3. Crear relaciones.
+4. Seleccionar un nodo.
+5. Verificar las métricas.
+6. Exportar el informe.
+---
+
 ## Estado del proyecto
 
 Proyecto finalizado para la entrega académica.
